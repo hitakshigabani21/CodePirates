@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Average Sans", sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #EDE8F5;
+    color:white;    
+    font-family:"Bree Serif", serif;
+}
+.container{
+    padding:15px;
+}
+/* nav-bar css */
+/* header-navbar */
+#header-navbar{
+    background-color: #3D52A1;
+    color:#ffff;
+}
+nav{
+    display:flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+nav #logo{
+    font-size: 30px;
+    margin: 0px 50px;
+    font-family: Georgia, serif;
+    font-weight: 400;
+}
+nav ul{
+    margin-left: 10px;
+}
+nav ul li{
+    list-style: none;
+    display:inline-block;
+    margin:20px 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 200;
+    /* position: relative; */
+}
+/* browse-mentors btn */
+.btn{
+    display: inline-block;
+    width:fit-content;
+    margin-left: 50px;
+    border:2px solid #ADBBDA;
+    padding:14px 40px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color:#ADBBDA;
+    background-color: #3D52A1;
+    transition: background-color 0.5s;
+}
+.btn:hover{
+    background-color : #ADBBDA;
+    color: #021526;
+}
+
+.signIn-btn{
+    justify-items: end;
+}
+.signin{
+    color: #ADBBDA;
+    text-decoration: none;;
+}
+.signin:hover{
+    background-color : #ADBBDA;
+    color: #021526;
+}
+
