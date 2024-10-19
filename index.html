@@ -8,9 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Average+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Adamina&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/69d01d5627.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asar&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- navbar -->
+   <header>
     <div id="header-navbar">
         <div class="container">
             <nav>
@@ -18,13 +32,209 @@
                 <ul id="sidemenu">
                     <li><a href="#header">HOME</a></li>
                     <li><a href="#about">ABOUT US</a></li>
-                    <li><a href="#my-profile">MY PROFILE</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                     <li><a href="./login.html">LOGIN</a></li>
                 </ul>
-                <button class="signIn-btn btn"><a href="./mentor_profile.html" class="signin">BROWSE MENTORS</a></button>
+                <a href="./mentors.html"><button class="signIn-btn btn">BROWSE MENTORS</button></a>
+                
             </nav>
         </div>
     </div>
+   </header> 
+    <main>
+        <div class="hero_section">
+            <div class="hero-animate">
+                <div class="browse">
+                    <div class="brow-animation">
+                        <div class="wrapper">
+                            <div class="static-txt">Your <span></br>MENTORSHIP</span> journey awaits: </br>
+                            <ul class="dynamic-txts">
+                              <li><span>Learn</span></li>
+                              <li><span>Share</span></li>
+                              <li><span>Thrive</span></li>
+                              <li><span>Elevate</span></li>
+                            </ul>
+                            <a href="./mentors.html"><button id="mentor-btn" class="signIn-btn btn">Find Mentor</button></a>
+                        </div>
+                        <div class="landing-img">
+                            <img src="./assets/landing_img.jpg">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div> 
+        </div>
+
+        <!-- mentorship-facts -->
+        <div class="container">
+            <div class="section-heading">
+                <h1>"Why Mentorship Matters"</h1>
+            </div>
+            <div id="facts">
+                <div class="facts-container flex justify-around items-center">
+                    <div class="facts-box flex items-center flex-col justify-center cursor-pointer rounded-lg bg-[#fbbe17]" id="box1" >
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <h3>Flexibility </br>and Convenience</h3>
+                    </div>
+                    <div class="facts-box flex items-center flex-col justify-center cursor-pointer rounded-lg bg-[#fbbe17]" id="box2" >
+                        <i class="fa-solid fa-arrow-up-right-dots"></i>
+                        <h3>Actively Shapes Career Paths</h3>
+                        
+                    </div>
+                    <div class="facts-box flex items-center flex-col justify-center cursor-pointer rounded-lg bg-[#fbbe17]" id="box3" >
+                        <i class="fa-solid fa-people-roof"></i>
+                        <h3>Faster Access to Experienced Mentors</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Carousel Section to display top mentors of University-->
+        <div class="container">
+            <div class="section-heading"><!--Heading of Carousel-->
+                <h1>Our Top Mentors</h1>
+            </div>
+            <!--Carousel Section to display top mentors of University-->
+           <div class="carousel">
+            <div class="hero-carousel">
+                <div class="slide">
+                    <img src="./assets/mentor-1.png">
+                </div>
+                <div class="slide">
+                    <img src="./assets/mentor-2.png">
+                </div>
+                <div class="slide">
+                    <img src="./assets/mentor-3.png">
+                </div>
+                <div class="slide">
+                    <img src="./assets/mentor-4.png">
+                </div>
+                <div class="slide">
+                    <img src="./assets/mentor-5.png">
+                </div>
+                <div class="slide">
+                    <img src="./assets/mentor-6.png">
+                </div>
+    
+                <div class="slide">
+                    <img src="./assets/mentor-1.png">
+                </div>
+                <div class="slide">
+                    <img src="./assets/mentor-2.png">
+                </div>
+                <div class="slide">
+                    <img src="./assets/mentor-3.png">
+                </div>
+                <div class="slide">
+                    <img src="./assets/mentor-4.png">
+                </div>
+                <div class="slide">
+                    <img src="./assets/mentor-5.png">
+                </div>
+                <div class="slide">
+                    <img src="./assets/mentor-6.png">
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Number Counter -->
+        <!-- Counter Section -->
+         <div id="about">
+            <section id="counters" class="counters-section">
+                <div class="counter-box">
+                    <i class="fa-solid fa-people-group"></i>
+                    <h2 class="counter" data-target="500">0</h2>
+                    <p>Mentors Available</p>
+                </div>
+                <div class="counter-box">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <h2 class="counter" data-target="1200">0</h2>
+                    <p>Mentees Registered</p>
+                </div>
+                <div class="counter-box">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h2 class="counter" data-target="300">0</h2>
+                    <p>Successful Mentorships</p>
+                </div>
+                <div class="counter-box">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    <h2 class="counter" data-target="50">0</h2>
+                    <p>Programs Conducted</p>
+                </div>
+            </section>
+         </div>
+
+        <!-- Contact Us -->
+        <div id="contact" >
+        <div class="container">
+            <div class="row">
+                <!-- Left-side of contact page -->
+                <div class="contact-left">
+                    <h1 class="sub-title section-heading">Contact Us</h1>
+                    <p class="contact-para">Sant Longowal Institute of Engineering
+                        and Technology</p>
+                    <p class="contact-para"><i class="fa-solid fa-location-dot"></i>Longowal- 148106, Distt. Sangrur (Pb.), India</p>
+                    <p class="contact-para"><i class="fa-solid fa-phone"></i>+91-1672-280057</p>
+                </div>
+                <!-- Right side of the contact page -->
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name*" required>
+                        <input type="email" name="email" placeholder="Your Email*" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-container">
+                    <!-- Column 1: About SLIET Mentorship -->
+                    <div class="footer-row">
+                        <h4>About SLIET Mentorship</h4>
+                        <p>Our mentorship program fosters academic excellence, personal growth, and career success for students at SLIET.</p>
+                    </div>
+            
+                    <!-- Column 2: Quick Links -->
+                    <div class="footer-row">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="https://www.sliet.ac.in" target="_blank">SLIET Main Website</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
+                            <li><a href="/privacy-policy">Privacy Policy</a></li>
+                            <li><a href="/mentorship-program">Mentorship Program</a></li>
+                        </ul>
+                    </div>
+            
+                    <!-- Column 3: Contact Information -->
+                    <div class="footer-row">
+                        <h4>Contact Information</h4>
+                        <p>Sant Longowal Institute of Engineering and Technology<br> Longowal, Punjab, India</p>
+                        <p>Email: mentorship@sliet.ac.in</p>
+                    </div>
+            
+                    <!-- Column 4: Social Media -->
+                    <div class="footer-row">
+                        <h4>Follow Us</h4>
+                        <div class="footer-social">
+                            <a href="#"><i class="fa-brands fa-facebook"></i>  Facebook</a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i>  Twitter</a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i>  LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Sant Longowal Institute of Engineering and Technology. All Rights Reserved.</p>
+                </div>
+            </footer>
+            
+         </div>
+        
+    </main>
+    <script src="./first.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Booking</title>
+    <link rel="stylesheet" href="./book.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/69d01d5627.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body class="poppins-regular">
+
+<!-- navbar -->
+<div class="container">
+    <div id="header-navbar">
+        <nav>
+            <h1 id="logo">MentorConnect</h1>
+            <ul id="sidemenu">
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./login.html">LOGIN</a></li>
+            </ul>
+            <a href="./mentors.html"><button class="signIn-btn btn">BROWSE MENTORS</button></a>
+            
+        </nav>
+    </div>
+ </div>
+
+<h1 class="Mainhead average-sans-regular">Book a Session with Your Mentor</h1>
+
+<!-- Mentor Card with Insights and Rating -->
+<div class="mentorcard-container">
+    <div class="mentor-card">
+        <div class="mentor-image"></div>
+        <div class="mentor-details">
+            <h2 class="average-sans-regular">Dr. Birmohan Singh</h2>
+            <p>Designation: Professor</p>
+            <p>Department: Computer Science & Engineering</p>
+            <p>Email: birmohansingh@sliet.ac.in</p>
+            <div class="rating">
+                ★★★★☆ (4.5/5)
+            </div>
+        </div>
+    </div>
+    
+    <div class="insights">
+        <h3 class="average-sans-regular">Session Insights</h3>
+        <p>In this session, you'll learn critical skills like:</p>
+        <ul>
+            <li>Time management</li>
+            <li>Effective communication</li>
+            <li>Problem-solving techniques</li>
+            <li>Career guidance and advice</li>
+        </ul>
+    </div>
+</div>
+
+<div>
+    <h3 class="average-sans-regular">Select Date:</h3>
+    <div class="dates">
+        <button class="date" data-date="2024-10-20">October 20, 2024</button>
+        <button class="date" data-date="2024-10-21">October 21, 2024</button>
+        <button class="date" data-date="2024-10-22">October 22, 2024</button>
+    </div>
+</div>
+
+<div>
+    <h3 class="average-sans-regular">Available Slots:</h3>
+    <div class="slots poppins-regular">
+        <button class="slot" data-time="10:00 AM - 11:00 AM">10:00 AM - 11:00 AM</button>
+        <button class="slot" data-time="11:00 AM - 12:00 PM">11:00 AM - 12:00 PM</button>
+        <button class="slot" data-time="12:00 PM - 1:00 PM">12:00 PM - 1:00 PM</button>
+        <button class="slot" data-time="1:00 PM - 2:00 PM">1:00 PM - 2:00 PM</button>
+        <button class="slot" data-time="2:00 PM - 3:00 PM">2:00 PM - 3:00 PM</button>
+        <button class="slot" data-time="3:00 PM - 4:00 PM">3:00 PM - 4:00 PM</button>
+    </div>
+</div>
+
+<div class="booked-slots" id="booked-slots" style="display:none;">
+    <h3>Your Booked Slots:</h3>
+    <ul id="booked-slots-list"></ul>
+</div>
+
+<!-- Other Mentors Suggestion -->
+<h2 class="Mainhead average-sans-regular">Other Available Mentors</h2>
+<div class="other-mentors">
+    <div class="mentor-suggestion">
+        <img src="./assets/mentor-8.png" alt="Mentor 1">
+        <p>Sukhpreet Singh - Assistant Professor</p>
+    </div>
+    <div class="mentor-suggestion">
+        <img src="./assets/mentor-7.png" alt="Mentor 2">
+        <p>Dr. Vikash Kumar Garg - Guest Faculty</p>
+    </div>
+    <div class="mentor-suggestion">
+        <img src="./assets/mentor-6.png" alt="Mentor 3">
+        <p>Dr. Preetpal Kaur Buttar - Assistant Professor</p>
+    </div>
+    <div class="mentor-suggestion">
+        <img src="./assets/mentor-9.png" alt="Mentor 4">
+        <p>Chinu - Guest Faculty</p>
+    </div>
+</div>
+<script src="./book.js"></script>
+</body>
+</html>

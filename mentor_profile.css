@@ -45,11 +45,80 @@
     font-weight: 400;
     font-style: normal;
   }
-  
-  
-  
-/* css code */
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+  color:white;
+  background-color: #ffff;    
+    
+}
 
+/* nav-bar css */
+/* header-navbar */
+#header-navbar{
+    background-color: #3D52A1;
+    color:#ffff;
+    padding:15px;
+}
+nav{
+    display:flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+nav #logo{
+    font-size: 30px;
+    margin: 0px 50px;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+}
+nav ul{
+    margin-left: 30rem;
+}
+nav ul li{
+    list-style: none;
+    display:inline-block;
+    margin:20px 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 200;
+    /* position: relative; */
+}
+/* browse-mentors btn */
+.btn{
+    display: inline-block;
+    width:fit-content;
+    margin-left: 20px;
+    border:2px solid #ADBBDA;
+    padding:14px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:#ADBBDA;
+    background-color: #3D52A1;
+    transition: background-color 0.5s;
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.btn:hover{
+    background-color : #ADBBDA;
+    color: #3D52A1;
+}
+.signIn-btn{
+    justify-items: end;
+}
 body{
     background-color: #EDE8F5;
 }
@@ -60,7 +129,7 @@ body{
 }
 .rectangle {
    height : 200px;
-   width: 98vw;
+   
    background-image: linear-gradient(to right, #293241, #7091E6);
    /* background-image: url('./assets/back.png');
    background-repeat: no-repeat;
@@ -93,7 +162,7 @@ body{
 .profile-pic{
     width: 200px;
     height: 200px;
-    background-image: url('./assets/image\ 3.png');
+    background-image: url('./assets/mentor-1.png');
     background-position: 50%;
     border-radius : 50%;
     background-size: cover;
@@ -216,7 +285,7 @@ hr{
 }
 .review-card{
     padding:5px;
-    width: 400px;
+    width: 330px;
     /* height: 300px; */
     background-image: linear-gradient(135deg, #EDE8F5, #d1e1f5);
     margin: 10px;
@@ -232,6 +301,7 @@ hr{
     display: inline-block;
     font-size: 18px;
     padding-top: 10px;
+    color: #021526;
 }
 
 .profilepic{
@@ -245,6 +315,7 @@ hr{
 }
 .feedback{
 padding: 8px;
+color:#021526
 }
 .quotation{
     font-size: 35px;

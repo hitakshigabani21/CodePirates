@@ -1,0 +1,278 @@
+ 
+ .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .average-sans-regular {
+    font-family: "Average Sans", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    font-style: normal;
+  }
+/* nav-bar css */
+/* header-navbar */
+*{
+    margin:0;
+    padding: 0;
+}
+#header-navbar{
+    background-color: #3D52A1;
+    color:#ffff;
+    padding:10px;
+}
+nav{
+    display:flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+nav #logo{
+    font-size: 30px;
+    margin: 0px 50px;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    color:#ffff;
+}
+nav ul{
+    margin-left: 20rem;
+}
+nav ul li{
+    list-style: none;
+    display:inline-block;
+    margin:20px 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 200;
+    /* position: relative; */
+}
+/* browse-mentors btn */
+.btn{
+    display: inline-block;
+    width:fit-content;
+    margin-left: 20px;
+    border:2px solid #ADBBDA;
+    padding:14px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:#ADBBDA;
+    background-color: #3D52A1;
+    transition: background-color 0.5s;
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.btn:hover{
+    background-color : #ADBBDA;
+    color: #3D52A1;
+}
+.signIn-btn{
+    justify-items: end;
+}
+ /* Universal styling */
+ body {
+    /* background-color: #EDE8F5; */
+    color: #293241;
+    animation: fadeIn 1s ease-in-out;
+}
+h1, h3 {
+    color: #293241;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: slideInDown 1s ease-out;
+}
+.Mainhead{
+    text-align: left;
+}
+p {
+    margin: 5px 0;
+}
+
+/* Mentor card */
+.mentorcard-container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    height: 250px;
+}
+.mentor-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ADBBDA;
+    padding: 20px;
+    /* margin-bottom: 30px; */
+    border-radius: 10px;
+    /* background-color: #a9bdf6; */
+    /* background-color: #3D5A80; */
+    background-image: linear-gradient(to right, #293241, #7091E6);
+    color: white;
+    width: 40%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: zoomIn 0.8s ease-out;
+}
+.mentor-card:hover {
+    transform: translateY(-5px);
+}
+
+.mentor-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* background-color: #ADBBDA; */
+    background-image: url('./assets/mentor-1.png'); 
+    background-size: cover;
+    flex-shrink: 0;
+}
+.mentor-details {
+    flex: 1;
+    margin-left: 20px;
+}
+.mentor-details h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+.rating {
+    margin-top: 10px;
+    color: rgb(255, 217, 0);
+}
+.insights {
+    background-color: #213d6c;
+    color: white;
+    padding: 15px;
+    padding-bottom: 0px;
+    border-radius: 10px; 
+    width: 40%;
+}
+.insights>h3{
+    color: white;
+    margin-top: 5px;
+}
+
+/* Available slots */
+.slots, .dates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.slot, .date {
+    background-color: #3D5A80;
+    color: white;
+    padding: 12px 25px;
+    margin: 10px;
+    width: 200px;
+    height: 70px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.slot:hover, .date:hover {
+    background-color: #293241;
+    transform: scale(1.05);
+}
+.slot.booked, .date.booked {
+    background-color: #ADBBDA;
+    cursor: not-allowed;
+}
+.slots {
+    display: none;
+}
+
+/* Booked slots */
+.booked-slots {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #3D5A80;
+    color: white;
+    border-radius: 10px;
+    animation: slideInUp 1s ease-out;
+}
+.booked-slots ul {
+    list-style-type: none;
+    padding: 0;
+}
+.booked-slots li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ADBBDA;
+}
+
+/* Other mentors suggestion */
+.other-mentors {
+    margin-top: 30px;
+    /* background-color: #7191E6; */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    animation: zoomIn 0.8s ease-out;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.other-mentors h3 {
+    margin-bottom: 10px;
+}
+.mentor-suggestion {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #3D5A80;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    width: fit-content
+}
+.mentor-suggestion:hover {
+    transform: scale(1.05);
+}
+.mentor-suggestion img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ADBBDA;
+    flex-shrink: 0;
+}
+.mentor-suggestion p {
+    margin-left: 15px;
+    color: white;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .mentor-card, .other-mentors, .mentor-suggestion {
+        flex-direction: column;
+        text-align: center;
+    }
+    .mentor-details {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes slideInDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+@keyframes zoomIn {
+    from { transform: scale(0.9); }
+    to { transform: scale(1); }
+}
+@keyframes slideInUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}

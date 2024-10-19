@@ -1,0 +1,232 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #EDE8F5;   
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    padding:15px;
+    margin: 0px 50px;
+}
+/* nav-bar css */
+/* header-navbar */
+#header-navbar{
+    padding:15px;
+    background-color: #3D52A1;
+    color:#ffff;
+}
+nav{
+    display:flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+nav #logo{
+    font-size: 30px;
+    margin: 0px 50px;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+}
+nav ul{
+    margin-left: 20rem;
+}
+nav ul li{
+    list-style: none;
+    display:inline-block;
+    margin:20px 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 200;
+    /* position: relative; */
+}
+/* browse-mentors btn */
+.browse-btn{
+    display: inline-block;
+    width:fit-content;
+    margin-left: 50px;
+    border:2px solid #ADBBDA;
+    padding:14px 40px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color:#ADBBDA;
+    background-color: #3D52A1;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+.browse-btn:hover{
+    background-color : #ADBBDA;
+    color: #021526;
+}
+.signIn-btn{
+    justify-items: end;
+}
+
+/* mentors-display */
+#m-heading{
+    color:#293241;
+    margin-top: 10px;
+    margin-bottom: 55px;
+    font-family: "Average Sans", sans-serif;
+}
+.mentor-container{
+    display:flex;
+    gap:70px;
+}
+.mentor{
+    height:300px;
+    width:300px;
+    /* border:2px solid #293241; */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-color: #bfcbe3;
+    box-shadow: 7px 3px 8px rgba(0, 0, 0, 0.2);
+}
+.above-text{
+    text-align: center;
+}
+.mentor .mentor-img{
+    height:100%;
+    width:100%;
+    background-color: #c0cce7 ;
+    background-image: url("./mentor-1.png");
+    background-size: cover;
+    display: flex;
+    border-radius: 17px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border:2px solid #293241; */
+    overflow: hidden;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    transition: 0.6s ease ;
+    overflow: hidden;
+    /* position: relative; */
+}
+
+.mentor #mentor1-img{
+    background-image: url("./assets/mentor-1.png");
+}
+.mentor #mentor2-img{
+    background-image: url("./assets/mentor-2.png");
+}
+.mentor #mentor3-img{
+    background-image: url("./assets/mentor-3.png");
+}
+.mentor #mentor4-img{
+    background-image: url("./assets/mentor-4.png");
+}
+.mentor #mentor5-img{
+    background-image: url("./assets/mentor-5.png");
+}
+.mentor #mentor6-img{
+    background-image: url("./assets/mentor-6.png");
+}
+.mentor-img p{
+    text-align: center;
+    color:#293241;
+}
+/* #mentor1-img img{
+    border-radius: 50%;
+} */
+.mentor-img .name-card{
+    position: absolute;
+    height:10%;
+    bottom: 0;
+    background-color: #021526;
+    width: 100%;
+    color: #ADBBDA;
+    text-align: center;
+}
+.mentor-img .name-card p{
+    color: #ADBBDA;
+}
+.mentor:hover .mentor-img{
+    top: 5%;
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+    
+}
+.mentor:hover .name-card{
+    visibility: hidden;
+}
+
+.text-content{
+    margin: 30px 0;
+    text-align: center;
+    color:#021526;
+    font-weight: 500;
+    font-size: 16px;
+    position: absolute;
+    top:30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    
+}
+.mentor:hover .text-content{
+    animation: TopSlide 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes TopSlide {
+    0%{
+        transform: translateY(200px);
+        opacity: 0;
+        filter:blur(5px);
+    }
+    100%{
+        transform: translateY(00px);
+        opacity: 1;
+        filter: blur(0);
+    }
+    
+}
+.text-content .btn{
+    height:40px;
+    width:150px;
+    background-color:#021526;
+    color: #ADBBDA;
+    border:2px #ADBBDA solid;
+    border-radius: 30px;
+    font-family: "Poppins", sans-serif;
+    transition: background-color 0.5s;
+    box-shadow: 7px 3px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.mentor:hover .text-content{
+    animation: TopSlide 1s ease forwards;
+    opacity: 0;
+    animation-delay: .2s;
+}
+.profile-btn{
+    margin:8px 0;
+}
+.text-content .btn:hover{
+    background-color : #ADBBDA;
+    color: #021526;
+}
+#memberpanel-2{
+    margin-top: 10%;
+}
