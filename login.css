@@ -8,7 +8,7 @@ body {
 }
 body {
     
-    background-image: url('bg_login.avif');
+    background-image: url('./assets/bg_login.avif');
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
