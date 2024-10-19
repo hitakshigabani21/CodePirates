@@ -1,18 +1,99 @@
+/* custom css fonts that can be used*/
+.asar-regular {
+    font-family: "Asar", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.asul-regular {
+    font-family: "Asul", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .asul-bold {
+    font-family: "Asul", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .average-sans-regular {
+    font-family: "Average Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .archivo-black-regular {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+  
+/* css code */
+
 body{
     background-color: #EDE8F5;
 }
+
+/* styling the  profile banner */
 .profile_bar{
     position: relative;
 }
 .rectangle {
-   height : 150px;
+   height : 200px;
    width: 98vw;
-   background-color: #293241;
+   background-image: linear-gradient(to right, #293241, #7091E6);
+   /* background-image: url('./assets/back.png');
+   background-repeat: no-repeat;
+   background-size: cover; */
+   text-align: right;
+   font-weight: bolder;
+   font-size: 1rem;
+   position: relative;
 }
+
+
+.rectangle div{
+    position : relative;
+    right: 600px;
+    top: 70%;
+    font-size: 3rem;
+    color: #021526;
+    background-color: #EDE8F5;
+    padding: 5px;
+    /* border : 5px solid white; */
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.rectangle>div>p{
+    text-shadow: 4px 0 8px rgba(255, 255, 255, 0.1);
+    margin: 0;
+}
+
 .profile-pic{
-    width: 150px;
-    height: 150px;
-    background-image: url('./assets/image\ 10.png');
+    width: 200px;
+    height: 200px;
+    background-image: url('./assets/image\ 3.png');
     background-position: 50%;
     border-radius : 50%;
     background-size: cover;
@@ -20,4 +101,213 @@ body{
     bottom : 80px;
     left : 50px;
     border : #EDE8F5 solid 5px;
+}
+
+/* styling the cards */
+.name{
+    text-align: center;
+}
+.outerdiv{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.prof_profile_cardscontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60vw;
+    gap: 10px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;       
+    background: linear-gradient(135deg, #96b6ea, #d1e1f5);
+}
+/* creating animation for cards */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 17px;
+    /* font-weight: bold; */
+    font-weight: 400;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.info {
+    font-size: 16px;
+    color: #293241;
+    margin-bottom: 5px;
+}
+.skills {
+    font-size: 16px;
+    font-weight: bold;
+    color: #293241;
+}
+
+.skill-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skill-list li {
+    margin-bottom: 5px;
+    color: #293241;
+}
+
+.cards a{
+    text-decoration: none;
+    color: #293241;
+    text-wrap: wrap;
+}
+.cards-subheading{
+    font-size: 20px;
+    font-weight: 900px;
+}
+.prof-skills{
+    /* background-color: #293241; */
+    /* color: black; */
+    width : fit-content;
+    padding: 3px;
+    text-align: center;
+    border-radius: 10px;
+}
+.outercard{
+    margin-top: 20px;
+    width : 700px;
+}
+
+hr{
+    color:#293241;
+    height: 2px;
+}
+.extra{
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.feedback-cards-container{
+    position : absolute;
+    top:50%;
+    right: 0;
+    width: 30%;
+    background-color: white;
+    border:0;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 10px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.feedback-cards-container>h2>p{
+    margin: 0;
+    padding-left: 30px;
+}
+.review-card{
+    padding:5px;
+    width: 400px;
+    /* height: 300px; */
+    background-image: linear-gradient(135deg, #EDE8F5, #d1e1f5);
+    margin: 10px;
+    border-radius: 10px;
+}
+.user_profile{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    /* justify-content: space-around; */
+}
+.user{
+    display: inline-block;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.profilepic{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-image: url('./assets/image.png');
+    background-position: 50%;
+    background-size: contain;
+    display: inline-block;
+}
+.feedback{
+padding: 8px;
+}
+.quotation{
+    font-size: 35px;
+    color:#7091E6;
+}
+.outerinfodiv{
+    width: 900x;
+}
+.checked {
+  color: orange;
+}
+
+@media (max-width: 800px){
+    .prof_profile_cardscontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 90vw;
+        flex-wrap: wrap;
+    }
+    .outerdiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        width: 70%;
+    }
+    .outercard{
+        width : 800px;
+    }
+    .rectangle div{
+        top: 0px;
+        font-size : 2rem;
+    }
+    .rectangle{
+        width: 95vw;
+    }
+    .rectangle>div>p{
+        text-wrap: wrap;
+    }
+    .rectangle > div{
+        position : relative;
+        bottom: 0;
+        right: 30px;
+        top: 85%;
+    }
+    .profile-pic{
+        left: 30px;
+    }
+    .feedback-cards-container{
+        position : static;
+        width: 90vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-between;
+        margin-left: 10px;
+    }
+    .review-card{
+        width: 600px;
+    }
+
 }
